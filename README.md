@@ -7,7 +7,7 @@ The iOS version of ShadowAI is currently in the strategic planning phase. We are
 ## Key Features (MVP)
 - **Persistent SSH Roaming:** Seamlessly connect to Claude Code, Codex, and your local PC backends.
 - **Unified Sync:** Real-time synchronization of Projects, Notes, and Chats via the Central Shadow Backend.
-- **Voice-First UI:** Material 3 Expressive conversational interface designed for handheld efficiency.
+- **Native iOS UI:** Modern SwiftUI interface utilizing SF Symbols and native platform conventions.
 - **ShadowBridge Integration:** One-tap discovery and connection to your desktop environment.
 
 ## Current Roadmap

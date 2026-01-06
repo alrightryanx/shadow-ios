@@ -5,7 +5,7 @@ To bring the "Unified Shadow" experience to iOS, focusing on high-performance SS
 
 ## Tech Stack (MVP)
 - **Language:** Swift 6 (Strict Concurrency)
-- **UI:** SwiftUI (Material 3 Expressive theme replication)
+- **UI:** SwiftUI (Native iOS HIG with Shadow Technical Accents)
 - **Architecture:** MVVM + Coordinator Pattern
 - **Networking:** `Network.framework` for TCP Signaling, `Shout` (libssh2) for SSH.
 - **Persistence:** SwiftData
@@ -13,22 +13,23 @@ To bring the "Unified Shadow" experience to iOS, focusing on high-performance SS
 ## Phase 1: MVP Core (Current Focus)
 1. **SSH Roaming Engine:** Port `ShadowConnectionManager` logic for persistent backend connection.
 2. **Unified Sync:** Implement `CentralSyncManager` for Projects, Notes, and Chats.
-3. **Voice UI:** SwiftUI implementation of the asymmetric chat bubbles and red-themed conversational dialog.
-4. **ShadowBridge Link:** Discovery of local PC backends via mDNS.
+3. **Voice UI:** Native SwiftUI implementation using `SF Symbols` and standard iOS conversational patterns.
+4. **ShadowBridge Link:** Discovery of local PC backends via mDNS (Bonjour).
 
 ## Deferred Features (Post-MVP)
 
 ### 1. Local LLM (llama.cpp)
 **Status:** DEFERRED
-- **Reasoning:** High initial complexity for Swift/C++ interop, significant binary size increase, and high thermal impact on mobile. 
-- **Plan:** Initially rely on SSH-linked backends (Claude Code, Gemini CLI) or the Central Cloud API.
+- **Reasoning:** High initial complexity for Swift/C++ interop, significant binary size increase, and thermal impact. 
+- **Plan:** Initially rely on SSH-linked backends or Cloud APIs.
 
 ### 2. CarPlay Support
 **Status:** DEFERRED
-- **Reasoning:** Requires Apple's explicit CarPlay entitlement approval (Assistant/IOT category), which can take weeks/months.
-- **Plan:** Focus on a rock-solid handheld experience first. CarPlay templates will be mapped to the `Talk` tab logic once the app is stable and entitlements are requested.
+- **Reasoning:** Requires Apple's explicit CarPlay entitlement approval.
+- **Plan:** Focus on handheld experience first.
 
 ## Key Parity Requirements
-- **Encryption:** Must use Keychain for all sensitive credentials (API tokens, SSH keys).
-- **Theme:** Replicate the 2px border-radius technical look and Claude Terracotta accent (#D97757).
-- **Roaming:** Maintain the UDP Signaling logic to handle NAT traversal and IP changes seamlessly.
+- **Encryption:** Must use Keychain for all sensitive credentials.
+- **Native Aesthetic:** Support for Dynamic Type, SF Symbols 6, and proper dark mode materials.
+- **Theme:** Retain the Claude Terracotta accent (#D97757) but apply it via native iOS tinting.
+- **Roaming:** Maintain the UDP Signaling logic to handle NAT traversal and IP changes.
