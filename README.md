@@ -17,7 +17,7 @@ The iOS version of ShadowAI is currently in the strategic planning phase. We are
 - [ ] SwiftUI Conversational UI Implementation
 
 ## Related Repositories
-- [Shadow App (Android)](https://github.com/alrightryanx/shadow-android) - The primary Android application.
+- [ShadowApp](https://github.com/alrightryanx/shadow-app) - The central hub for the ShadowAI ecosystem.
 - [ShadowBridge](https://github.com/alrightryanx/shadow-bridge) - PC companion app for SSH and Local LLM orchestration.
 
 ---
