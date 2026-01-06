@@ -16,5 +16,9 @@ The iOS version of ShadowAI is currently in the strategic planning phase. We are
 - [ ] SwiftData Schema Mapping
 - [ ] SwiftUI Conversational UI Implementation
 
+## Related Repositories
+- [Shadow App (Android)](https://github.com/alrightryanx/shadow-android) - The primary Android application.
+- [ShadowBridge](https://github.com/alrightryanx/shadow-bridge) - PC companion app for SSH and Local LLM orchestration.
+
 ---
 *Note: Local LLM and CarPlay support are currently deferred for the initial release to ensure maximum stability of the core roaming engine.*
